@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Styreord. AoC3"
+date:   2015-11-25 11:13:19 +0100
+categories: AoC3
+---
+
 #Styreord
 Hvordan skrive styreord i AoC3
 
