@@ -18,7 +18,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
-kramdown:
-  input: GFM
+# kramdown:
+#   input: GFM
