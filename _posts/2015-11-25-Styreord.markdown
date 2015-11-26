@@ -7,15 +7,20 @@ categories: AoC3
 
 Hvordan skrive styreord i AoC3
 
+Vedlegg:
+[Utførende enhet](/Users/henry/Documents/prosjekter/SjoenH.github.io/_includes/aoc/utforende_enhet.png),
+[Mulige oppsett av FS](/Users/henry/Documents/prosjekter/SjoenH.github.io/_includes/aoc/muligefs.png),
+[Styreordsformat](/Users/henry/Documents/prosjekter/SjoenH.github.io/_includes/aoc/Styreordsformat.png).
+
 Beskrivelse av hva de forskjellige elementene i styreordet er:
 
 DA|AA|BA|MB|FS|MD|RW
 ---|---|---|---|---|---|---
 Destinasjon|Register 1| Register 2|Mux-B Velger*|Mulige oppsett av FS**|Mux-D velger*|Til register?***|
 
-*Se tegningen gitt i oppgaven.
-**Se tabellen som blir gitt i oppgaven.
-***Dersom du skriver til et register skal du sette denne til 1. Ellers 0.
+*Se [tegningen gitt i oppgaven](/Users/henry/Documents/prosjekter/SjoenH.github.io/_includes/aoc/utforende_enhet.png),
+**Se [tabellen som blir gitt i oppgaven](/Users/henry/Documents/prosjekter/SjoenH.github.io/_includes/aoc/muligefs.png),
+***Dersom du skriver til et register skal du sette denne til 1. Ellers 0. Se [tegningen\*](/Users/henry/Documents/prosjekter/SjoenH.github.io/_includes/aoc/utforende_enhet.png)
 
 **Kjekt å ha/kunne**:
 Tabell for register skrevet i binærtall.
@@ -35,9 +40,9 @@ Du vil bli gitt en styreordsformel som du skal oversette. Eksempelvis en slik en
 - Svaret må være eksakt og uten mellomrom.
 - Bruk *x* der hvor du eventuelt har ubrukte bits.
 
-**Generell Fremgangsmåte**
+**Fremgangsmåte**
 
-1. Finn DA i tabellen. Fyll inn 3 tegn.
+1. Finn DA i tabellen. Fyll inn 3 tegn. (dersom det er et register vel og merke)
 2. Finn AA i tabellen. Fyll inn 3 tegn.
 3. Finn BA i tabellen. Fyll inn 3 tegn.
 4. Se på tegningen hvilken posisjon du ønsker å ha Mux-B i. 1 tegn. (0 skulle funke)
@@ -69,3 +74,19 @@ Håper dette hjelper. :)
 
 Mvh
 Henry.
+
+-
+*Eksempel 2:*
+
+	R5 ← R2 + ¬R7
+
+DA|AA|BA|MB|FS|MD|RW
+---|---|---|---|---|---|---
+*R5*|*R2*|*R7*|0|*R5 ← R2 + ¬R7*|0|1
+101| 010 | 111 |0|00100|0|1
+
+Svar:
+
+	10101011100010001
+	
+
