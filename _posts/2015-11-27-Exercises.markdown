@@ -7,6 +7,9 @@ categories: DigDat
 <!-- Doesn't work. -->
 <!-- Here is the [exercise paper](~/sharedfiles/Digdat/exercise4-2.pdf). -->
 
+
+The Exercise:
+-
 Given is the following assembly program:
 
     0x00 ldi %r2, 1
