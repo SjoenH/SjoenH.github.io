@@ -29,6 +29,58 @@ Use the instruction set architecture in Section 1 to translate the assembly to m
 **Submission**:
 Hand in a plain text file with ONLY one machine instruction per line. Don’t put the address before the instruction.
 
+Let's translate!
+-
+
+ldi| %r2| 1|
+|:---:|:---:|:---:|
+0|R2|immediate
+00000|00010|0000000000000000000001|
+
+	00000000100000000000000000000001
+
+|ldi   | %r1 | 1         |
+|:------:|:-----:|:-----------:|
+|0|rD|immediate|
+|00000|00001|0000000000000000000001|
+
+	00000000010000000000000000000001
+
+mul| %r2| %r2| %r0
+:---:|:---:|:---|:---:
+00010|00010|00010|00000|XXXXXXXXXXXX|
+
+	00010000100001000000XXXXXXXXXXXX
+
+sub| %r0| %r0| %r1||
+:---:|:---:|:---:|:---:|:---:|:---:
+00101|00000|00000|00001|XXXXXXXXXXXX|
+
+	00101000000000000001XXXXXXXXXXXX
+
+cmp| %r3| %r0| %r1||
+:---:|:---:|:---:|:---:|:---:|:---:
+3|rD|rA|rB||
+00011|00011|00000|00001|XXXXXXXXXXXX
+
+	00011000110000000001XXXXXXXXXXXX
+
+jgt| %r3| -16
+:---:|:---:|:---:
+4|rD|immediate
+00100|00011|1111111111111111110000
+
+  00100000111111111111111111110000
+
+**Solution**
+
+    00000000100000000000000000000001
+    00000000010000000000000000000001
+    00010000100001000000XXXXXXXXXXXX
+    00101000000000000001XXXXXXXXXXXX
+    00011000110000000001XXXXXXXXXXXX
+    00100000111111111111111111110000
+
 Exercise 5
 -
 Assume that register %r0 contains 2 before the program is executed. What would be the value in register %r2 once the program reaches the instruction at address 0x18, i.e. the branch at address 0x14 is not taken. What would be the value in %r2, if %r0 would contain 3, 4, 9?
