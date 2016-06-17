@@ -1,8 +1,8 @@
 ---
 layout = post
-title = test
-date = 2016-06-18T01:07:13+02:00
-author = Arne
+title = Dette er en test
+date = 2016-06-18T01:14:37+02:00
+author = Henry
 categories =
 - blog
 img = post02.jpg
