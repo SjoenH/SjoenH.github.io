@@ -1,133 +1,62 @@
-### GENERAL SETTINGS ###
-
 # Site settings
-title: Makerspace-IDI.
+title: Freelancer
+email: your-email@domain.com
+url: https://example.github.io
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "" #important: start with /
-url: "http://makerspace-idi"
+skills: "Web Developer - Graphic Artist - User Experience Designer"
+meta_author: LastName FirstName
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Dr. Henry Jekyll
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: facebook
+    url:
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title
-excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
-
-colors:  #in hex code if not noted else
-  primary: "#9600fe" #"#F70031"
-  primary_rgb: "117, 46, 147" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
-  secondary: "#384452" #"#33004D"
-  link: "#428bca"
-  link_hover: "#01b2fe"
-  footer_heading: "#ffffff"
-  footer_content: "#bfc9d3"
-
-
-### CONTACT SETTINGS ###
-
-# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
-social:
-  # - title: dribbble
-  #   url:
-  - title: facebook
-    url:
-  - title: twitter
-    url:
-  - title: instagram
-    url:
-  # - title: tumblr
-  #   url:
-
-# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
-address:
-  - lines:
-    - NTNU, Gløshaugen
-email: henryskorpe+makerspace-idi@gmail.com
-tel: +47 984 36 185
-
-
-### GENERAL DATA FOR VARIOUS LOCATIONS ###
-
-# Members information. Shown on About page.
-members:
-  - name: Emil Ovik Kollstrøm
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Emil.jpg
-
-  - name: Henry S. Sjøen
-    position: Coffee Enthusiast
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: henry.jpg
-    social:
-    - title: envelope
-      url: mailto:henryskorpe+makerspace@gmail.com
-
-  - name: Hung Quang Thieu
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: anonym_m.jpg
-
-  - name: Håvard Anda Estensen
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Haavard.jpg
-
-  - name: Jie Li
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Jie.jpg
-
-  - name: Jonas Hermansen Muribø
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Jonas.jpg
-
-  - name: Kia Brekke
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Kia.jpg
-
-  - name: Martin Bjerke
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Martin.jpg
-
-  - name: Philipp Zirpins
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: anonym_m.jpg
-
-  - name: Renate Bech-Sørensen
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Renate.jpg
-
-  - name: Sigve Skaugvoll
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: Sigve.jpg
-
-  - name: Uyen Dan Nguyen (Mimi)
-    position: position
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: mimi.jpg
-
-# Clients information. Shown on Home and About pages.
-clients:
-  - name: NTNU
-    img: logo_ntnu_u-slagord.png
-  # - name: Code is Poetry
-  #   img: client02.png
-  # - name: Vimeo
-  #   img: client03.png
-  # - name: VimeoPro
-  #   img: client04.png
-
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "We make awesome happen!"
-
-# Testimonial content. Shown on Home and About page.
-testimonial:
-    message: "The folks at Makerspace-IDI is amazing"
-    author: Prof. Pekka Kalevi Abrahamsson
-    position: Tech Guru
+permalink: pretty
