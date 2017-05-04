@@ -1,9 +1,10 @@
 # Site settings
-title: Henry S. Sjøen
+title: sjoen.me
+name:  Henry S. Sjøen
 email: henryskorpe@gmail.com
 url: https://sjoen.me
 description: "I make software solutions."
-skills: "Web Developer - Graphic Artist - User Experience Designer"
+skills: "Student og utvikler på heltid"
 meta_author: Sjøen Henry
 
 # Google webmaster tools
