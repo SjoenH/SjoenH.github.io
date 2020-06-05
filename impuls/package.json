@@ -18,7 +18,7 @@
     "gulp-less": "4.0.1",
     "gulp-rename": "1.4.0",
     "gulp-uglify": "3.0.2",
-    "jquery": "3.4.1"
+    "jquery": "3.5.1"
   },
   "repository": {
     "type": "git",
